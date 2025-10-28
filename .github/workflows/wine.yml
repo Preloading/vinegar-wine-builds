@@ -39,8 +39,8 @@ jobs:
       run: |
         echo "PATH=/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH" >> $GITHUB_ENV
         sudo dpkg --add-architecture i386
-        sudo apt update -y
-        sudo apt install \
+        sudo apt-get update -y
+        sudo apt-get install \
           autoconf \
           build-essential \
           binutils \
